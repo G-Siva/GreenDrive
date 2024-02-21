@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    width: 100%;
+}
+button:hover{
+    background-color: #009688 !important;
+}
+.navigation a:hover{
+    color:lawngreen;
+}
+.navigation a{
+    transition: 0.5s ease-in-out;
+}
+*{
+    margin:0;
+    overflow-x: visible; 
+    width: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.homescreen{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.speedometer{
+    width:100px;
+    height:100px;
+    background-color: #009688;
+    color:white;
+    border-radius:50%;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+    text-align: center;
+    display: none;
+    position:fixed;
+    bottom:5px;
+    right:10px;
+    
+    z-index: 10000;
+}
+.speedometer p{
+    font-style:italic;
+}
+.topscreen{
+    width:100%;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    align-items: center;
+
+
+    
+}
+.restofhome{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: center;
+    text-align: center;
+}
+.restofhome img{
+    height:400px;
+    width:624px;
+    margin-top:70px;
+    margin-bottom:70px;
+}
+
+.restofhome #model {
+    font-family: 'Roboto', sans-serif;  
+    margin-top:20px;
+}
+.restofhome #model h1{
+    font-family: 'Roboto', sans-serif;  
+    font-weight: bolder;
+}
+
+
+.restofhome button{
+   width:160px;
+   height:100px;
+   background-color: rgb(0, 211, 211);
+   color:white;
+   border-radius: 30px;
+   margin-bottom: 70px;
+ 
+}
+
+.tabsapp{
+    margin-top:30px;
+    height:fit-content;
+    max-width:700px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 30px;
+    align-items: center;
+    position:fixed;
+    bottom:10px;
+    
+}
+.tabsapp a{
+    font-size:40px;
+    width: fit-content;
+}
+
+
+.logotop h1{
+    margin-left:30px;
+}
+
+.green{
+    color:lawngreen;
+}
+
+.white
+{
+    color:white;
+    font-weight:lighter;
+}
+.black
+{
+    color:black;
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navigation img{
+    height:19px;
+    width:19px;
+    margin-left: 5px;
+}
+.navigation a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation button{
+    width:300px;
+    border-radius:20px;
+    margin-right:30px;
+    
+}
+
+
+.roboto{
+    font-family: 'Roboto', sans-serif;  
+}
+
+#iframe{
+    display: none;
+    z-index: 100;
+    height: calc(100vh - 110px);
+    width: 100%;
+    position: fixed;
+    top:0px;
+}
+.body{
+    background-color:rgb(207, 207, 207);
+    z-index:50;
+    height:110px;
+    width:100vw;
+    position:fixed;
+    bottom:0px;
+    display: none;
+}
+
+
+@media only screen and (max-width: 910px){
+   
+    
+    .logotop h1{
+        font-size:26px;
+    }
+    .navigation button{
+        width:100px;
+    }
+    .navigation{
+        align-items: center;
+    }
+    .tabsapp{
+        width:90%;
+    }
+  }
+
+
+  @media only screen and (max-width: 600px){
+   
+    .navigation button{
+        width:100px;
+    }
+    .navigation{
+        align-items: center;
+    }
+    .navigation a{
+        font-size:12px;
+    }
+    .restofhome img{
+        height:253px;
+        width:394px;
+        margin-top:70px;
+        margin-bottom:70px;
+    }
+   
+  }
+
+
+  @media only screen and (max-width:400px){
+   
+    .navigation button{
+        width:100px;
+        margin-right:0px !important;
+    }
+    .logotop h1{
+        margin-left: 4px;
+        font-size:20px
+    }
+    .restofhome img{
+        height:193px;
+        width:300px;
+        margin-top:70px;
+        margin-bottom:70px;
+    }
+    
+    .restofhome button{
+        width:160px;
+        height:100px;
+        background-color: rgb(0, 211, 211);
+        color:white;
+        border-radius: 30px;
+        margin-top:60px;
+     }
+     .restofhome div{
+        margin-top:60px;
+     }
+     .navigation img{
+        display: none;
+     }
+  }

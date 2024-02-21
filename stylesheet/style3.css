@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    width: 100%;
+  
+}
+.navigation img{
+    height:19px;
+    width:19px;
+    margin-left: 5px;
+}
+.navigation a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    background-color: #009688 !important;
+}
+.navigation a:hover{
+    color:lawngreen;
+}
+.navigation a{
+    transition: 0.5s ease-in-out;
+}
+
+*{
+    margin:0;
+    overflow-x:hidden !important; 
+    width: 100%;
+}
+body{
+
+    background-color:rgb(228, 228, 228);
+    font-family: 'Roboto', sans-serif;  
+}
+
+.homescreen{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.topscreen{
+    width:100%;
+    height:80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    align-items: center;
+
+
+    
+}
+.restofhome{
+    width:100%;
+    height:fit-content;
+    display:flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+  
+}
+
+
+
+.restofhome div h1{
+    font-family: 'Roboto', sans-serif;  
+    font-weight: bolder;
+}
+
+
+
+
+.tabsapp{
+    margin-top:30px;
+    height:fit-content;
+    max-width:700px;
+    display: flex;
+    justify-content: space-around !important;
+    background-color: black;
+  
+    border-radius: 30px;
+    align-items: center;
+    position:fixed;
+    bottom:10px;
+
+    
+}
+.tabsapp a{
+    font-size:40px;
+    width:fit-content;
+    
+}
+
+
+.logotop h1{
+    margin-left:30px;
+   
+}
+
+.green{
+    color:lawngreen;
+}
+
+.white
+{
+    color:white;
+    font-weight:lighter;
+}
+.black
+{
+    color:black;
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navigation button{
+    width:300px;
+    border-radius:20px;
+    margin-right:30px;
+    
+}
+
+
+.roboto{
+    font-family: 'Roboto', sans-serif;  
+}
+
+
+.info{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info img{
+    width:187px ;
+    height:120px;
+    margin-right:20px;
+}
+
+.info p{
+    margin-left:30px;
+    margin-top:5px;
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    color:black;
+}
+
+.box{
+    max-width:900px;
+   
+    background-color: white;
+    border-radius: 50px;
+
+    font-family: 'Roboto', sans-serif;  
+   
+
+}
+
+
+.title h1{
+    text-align: center;
+}
+.progress h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.previous h2{
+    text-align: center;
+}
+
+
+
+.previous{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top:30px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;  
+    height:fit-content;
+}
+.box{
+    max-width:900px; /* Sets maximum width to 900px */
+    margin:0; /* Removes margins */
+    background-color: white; /* Sets background color to white */
+    border-radius: 50px; /* Rounds the corners of the box */
+    margin-bottom: 50px; /* Adds bottom margin to the box for spacing */
+    font-family: 'Roboto', sans-serif;  /* Sets the font for the box class */
+}
+.previous h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.status{
+    display: flex;
+    justify-content: space-between;
+}
+
+.statusinfo{
+    color:gray;
+    font-weight: 300;
+    margin-left:40px;
+    margin-bottom:5px;
+}
+
+.title{
+    margin-top:20px;
+    width:fit-content;
+    height:fit-content;
+    border-bottom: 3px solid black;
+}
+
+@media only screen and (max-width: 910px){
+    
+   
+    
+    .logotop h1{
+        font-size:26px;
+    }
+    .navigation button{
+        width:100px;
+    }
+    .navigation{
+        align-items: center;
+    }
+    .tabsapp{
+        width:90%;
+    }
+  }
+
+
+  @media only screen and (max-width: 600px){
+   
+    .navigation button{
+        width:100px;
+    }
+    .navigation{
+        align-items: center;
+    }
+    .navigation a{
+        font-size:12px;
+    }
+ 
+   
+  }
+
+
+  @media only screen and (max-width:400px){
+   
+    .navigation button{
+        width:100px;
+        margin-right:0px !important;
+    }
+    .logotop h1{
+        margin-left: 4px;
+        font-size:20px
+    }
+    .navigation img{
+        display: none;
+    }
+   
+   
+    
+  }
